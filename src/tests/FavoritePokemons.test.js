@@ -3,7 +3,7 @@ import { screen } from '@testing-library/react';
 import renderWithRouter from '../renderWithRouter';
 import FavoritePokemons from '../pages/FavoritePokemons';
 
-describe('Testanto o componente FavoritePokemons.js', () => {
+describe('Testando o componente FavoritePokemons.js', () => {
   test('Testando se a mensagem é exibida corretamente sem nenhum pokémon', () => {
     renderWithRouter(<FavoritePokemons />);
 

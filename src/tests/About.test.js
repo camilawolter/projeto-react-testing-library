@@ -3,14 +3,14 @@ import { screen } from '@testing-library/react';
 import renderWithRouter from '../renderWithRouter';
 import About from '../pages/About';
 
-describe('Testanto o componente About', () => {
+describe('Testando o componente About', () => {
   test('Testando se possuem um heading', () => {
     renderWithRouter(<About />);
 
     const headingAbout = screen.getByRole('heading', { name: 'About Pokédex' });
     expect(headingAbout).toBeInTheDocument();
   });
-  test('Testanto se a página tem dois parágrafos', () => {
+  test('Testando se a página tem dois parágrafos', () => {
     renderWithRouter(<About />);
 
     const paragraUm = screen.getByText(/This application simulates a Pokédex/i);
